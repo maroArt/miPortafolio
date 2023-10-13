@@ -2,207 +2,254 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Titulo de mi pagina, va a verse en pertaña -->
-    <title>Mi portafolio</title>
-    <!-- Link al CSS de boostrap -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Titulo de mi pagina, va a verse en pertaña -->
+  <title>Mi portafolio</title>
+  <link rel="icon" type="image/jpg" href="assets/logo.png"/>
+  <!-- Link al CSS de boostrap -->
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
 
-    <!-- Link a iconos de bootstra´p -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="stylesheet.css">
+  <!-- Link a iconos de bootstra´p -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="stylesheet.css">
 </head>
 
 <body>
-    <!-- Poner elementos nuestros, la base de este se puede cambiar y modificar -->
-    <div class="container">
-        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-            <a href="/"
-                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-                <!-- la calse mx-2 se utliza para dar espacio -->
-                <img class="mx-2" src="assets/logo.png" width="60px" height="60px" alt="logo">
-                <!-- Agregar imagen y nombre para personalizar la pagina -->
-                <span class="fs-4">Simple header</span>
-            </a>
+  <!-- Poner elementos nuestros, la base de este se puede cambiar y modificar -->
+  <!-- Para agregar o cambiar elementos en especifico de utliza ya el CSS -->
+  <div class="container">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <!-- la calse mx-2 se utliza para dar espacio -->
+        <img class="mx-2" src="assets/logo.png" width="60px" height="60px" alt="logo">
+        <!-- Agregar imagen y nombre para personalizar la pagina -->
+        <span class="fs-4">Simple header</span>
+      </a>
 
-            <!-- Poner los menus para mi pagina, puedo cambiar los que yo quiera -->
-            <ul class="nav nav-pills">
-                <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Sobre mi</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Proyectos</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Contacto</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-            </ul>
-        </header>
+      <!-- Poner los menus para mi pagina, puedo cambiar los que yo quiera -->
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+        <li class="nav-item"><a href="#acercademi" class="nav-link">Sobre mi</a></li>
+        <li class="nav-item"><a href="#proyecto" class="nav-link">Proyectos</a></li>
+        <li class="nav-item"><a href="#rueda" class="nav-link">Galería</a></li>
+        <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
+      </ul>
+    </header>
 
-        <section id="sobremi" class="px-4 pt-5 my-5 text-center">
-            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-                <div class="col-10 col-sm-8 col-lg-6">
-                  <img src="assets/Yo.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
-                </div>
-                <div class="col-lg-6">
-                  <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3 text-start">¡Hola!</h1>
-                  <h2 class="lead fs-2 text-start">Bienvenido a mi portafolio.</h2>
-                  <p class="text-start">Me llamo Mariana, pero prefiero que me digan Maro, soy una estudiante de la carrera de diseño gráfico, tengo mucho interés por el uso de la tecnología y el área de diseño UX/IU</p>
-                  <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                    <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
-                    <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
-                  </div>
-                </div>
-              </div>
-        </section>
+    <section id="sobremi" class="px-4 pt-5 my-5 text-center">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img src="assets/Yo.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500"
+            loading="lazy">
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3 text-start" id="titulo">¡Hola!</h1>
+          <h2 class="lead fs-2 text-start">Welcome 🖖</h2>
+          <p class="text-start">¡Bienvenido a mi portafolio! Aquí puedes encontrar somas sobre mí y mis trabajos, ¡Explora y descubre las experiencias que he creado, y no dudes en ponerte en contacto para cualquier pregunta o colaboración!</p>
+        </div>
+      </div>
+    </section>
 
-        <section id="nose" class="px-4 pt-5 my-5 text-center">
-            <h1 class="display-4 fw-bold text-body-emphasis">Centered screenshot</h1>
-            <div class="col-lg-6 mx-auto">
-                <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the
-                    world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive
-                    grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
-                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-                    <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Primary button</button>
-                    <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
-                </div>
+    <section id="acercademi" class="px-4 pt-5 my-5 text-center">
+      <h1 class="display-4 fw-bold text-body-emphasis">Un poco sobre mi. </h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">Me llamo Mariana, pero prefiero que me digan Maro, soy una estudiante de la carrera de diseño gráfico, me apasiona la tecnología y como la podemos usar como herramienta, tengo interés en la experiencia de usuario y la rama de diseño UX/UI, también amo la ilustración.</p>
+      </div>
+      <div class="overflow-hidden" style="max-height: 60vh;">
+        <div class="container px-5">
+          <img src="assets/miAvatar.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Mi avatar"
+            width="512" height="512" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section id="proyecto" class="container px-4 py-5" id="custom-cards">
+      <h2 class="pb-2 border-bottom">Proyectos</h2>
+
+      <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="background-image: url('assets/editorial.png');">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Diseño editorial</h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img src="assets/logo.png" alt="logo" width="32" height="32"
+                    class="rounded-circle border border-white">
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#geo-fill"></use>
+                  </svg>
+                  <small>Diseño de portada y texto</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#calendar3"></use>
+                  </svg>
+                  <small>1</small>
+                </li>
+              </ul>
             </div>
-            <div class="overflow-hidden" style="max-height: 30vh;">
-                <div class="container px-5">
-                    <img src="bootstrap-docs.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image"
-                        width="700" height="500" loading="lazy">
-                </div>
-            </div>
-        </section>
-
-        <section id="proyecto" class="container px-4 py-5" id="custom-cards">
-            <h2 class="pb-2 border-bottom">Proyectos</h2>
-        
-            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-              <div class="col">
-                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-1.jpg');">
-                  <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h3>
-                    <ul class="d-flex list-unstyled mt-auto">
-                      <li class="me-auto">
-                        <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-                      </li>
-                      <li class="d-flex align-items-center me-3">
-                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                        <small>Earth</small>
-                      </li>
-                      <li class="d-flex align-items-center">
-                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                        <small>3d</small>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-        
-              <div class="col">
-                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-2.jpg');">
-                  <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Much longer title that wraps to multiple lines</h3>
-                    <ul class="d-flex list-unstyled mt-auto">
-                      <li class="me-auto">
-                        <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-                      </li>
-                      <li class="d-flex align-items-center me-3">
-                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                        <small>Pakistan</small>
-                      </li>
-                      <li class="d-flex align-items-center">
-                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                        <small>4d</small>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-        
-              <div class="col">
-                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-3.jpg');">
-                  <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here</h3>
-                    <ul class="d-flex list-unstyled mt-auto">
-                      <li class="me-auto">
-                        <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-                      </li>
-                      <li class="d-flex align-items-center me-3">
-                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                        <small>California</small>
-                      </li>
-                      <li class="d-flex align-items-center">
-                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                        <small>5d</small>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-        </section>
-
-        <section id="rueda">
-        <div id="carouselExample" class="carousel slide">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="assets/carousell1.jpg" class="d-block w-100" alt="imagen1">
-              </div>
-              <div class="carousel-item">
-                <img src="assets/carousell2.jpg" class="d-block w-100" alt="imagen2">
-              </div>
-              <div class="carousel-item">
-                <img src="assets/carousell3.jpg" class="d-block w-100" alt="">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
           </div>
-        </section>
+        </div>
 
-        <footer class="py-3 my-4">
-            <!-- Se puden agregar iconos -->
-            <!-- Cambiar el nombre de los apartados -->
-            <!-- Agregar links a los perfiles, no dejar el href asi -->
-            <ul class="nav justify-content-center">
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary"> <i class="bi bi-house"></i>Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
-            </ul>
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="background-image: url('assets/2theGirls.png');">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">ilustración</h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img src="assets/logo.png" alt="logo" width="32" height="32"
+                    class="rounded-circle border border-white">
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#geo-fill"></use>
+                  </svg>
+                  <small>Ilustración digital</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#calendar3"></use>
+                  </svg>
+                  <small>2</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
-            <ul class="nav justify-content-center border-bottom pb-3 mb-3 text-dark">
-                <a href="https://www.instagram.com/maro000.art/" target="_blank">
-                    <li><i class="bi bi-instagram mx-2 text-dark"> </i></li>
-                </a>
-                <a href="https://github.com/maroArt" target="_blank">
-                    <li><i class="bi bi-github mx-2 text-dark"></i></li>
-                </a>
-            </ul>
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="background-image: url('assets/code2.jpg');">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Front end</h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img src="assets/logo.png" alt="logo" width="32" height="32"
+                    class="rounded-circle border border-white">
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#geo-fill"></use>
+                  </svg>
+                  <small>Uso de HTML, CSS y Java <Script></Script></small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#calendar3"></use>
+                  </svg>
+                  <small>3</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <p class="text-center text-body-secondary">© 2023 Mariana Guajardo, Tecnolochicas PRO</p>
-        </footer>
-    </div>
+    <section id="rueda">
+      <h2 class="pb-2 border-bottom">Otros proyectos</h2>
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/mural.png" class="d-block w-100" alt="imagen1">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/edición.png" class="d-block w-100" alt="imagen2">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/ilustracion.png" class="d-block w-100" alt="imagen3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- En Css logre quitar con propiedad de color y text decoration la apariencia de link -->
+    <!-- <div>
+          <p><a href="https://github.com/" target="_blank">github</p></a>
+        </div>-->
+
+        <div class="row align-items-center g-lg-5 py-5" id="contacto">
+          <div class="col-lg-7 text-center text-lg-start">
+            <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">¡Contáctame!</h1>
+            <p class="col-lg-10 fs-4">Si estás buscando colaborar en proyectos emocionantes y creativos, ¡estás en el lugar adecuado! Contáctame por correo electrónico para explorar nuevas oportunidades y construir algo increíble juntos. ¡Espero conocerte pronto!</p>
+          </div>
+          <div class="col-md-10 mx-auto col-lg-5">
+            <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Dirección de correo</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Mensaje</label>
+              </div>
+              <button class="w-100 btn btn-lg btn-primary" type="submit">Enviar</button>
+              <hr class="my-4">
+              <small class="text-body-secondary">Nos pondremos en contacto lo más pronto posible</small>
+            </form>
+          </div>
+        </div>
+
+    <footer class="py-3 my-4" id="about">
+      <!-- Se puden agregar iconos -->
+      <!-- Cambiar el nombre de los apartados -->
+      <!-- Agregar links a los perfiles, no dejar el href asi -->
+      <ul class="nav justify-content-center">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary"> <i class="bi bi-house"></i>Home</a>
+        </li>
+        <li class="nav-item"><a href="#acercademi" class="nav-link px-2 text-body-secondary">Sobre mi</a></li>
+        <li class="nav-item"><a href="#proyecto" class="nav-link px-2 text-body-secondary">Proyectos</a></li>
+        <li class="nav-item"><a href="#rueda" class="nav-link px-2 text-body-secondary">Galeria</a></li>
+        <li class="nav-item"><a href="#contacto" class="nav-link px-2 text-body-secondary">Contacto</a></li>
+      </ul>
+
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3 text-dark">
+        <a href="https://www.instagram.com/maro000.art/" target="_blank">
+          <li><i class="bi bi-instagram mx-2 text-dark"> </i></li>
+        </a>
+        <a href="https://github.com/maroArt" target="_blank">
+          <li><i class="bi bi-github mx-2 text-dark"></i></li>
+        </a>
+      </ul>
+
+  
+
+      <p class="text-center text-body-secondary">© 2023 Mariana Guajardo, Tecnolochicas PRO</p>
+    </footer>
+  </div>
 
 
 
 
 
-    <!-- Para poncer comentarios es contro + k cotrol +c -->
-    <!-- Tambien funciona Alt + Shit + A  -->
-    <!-- Siemrpe se pone el scrip antes de la etiqueta de cierre de el boddy -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+  <!-- Para poncer comentarios es contro + k cotrol +c -->
+  <!-- Tambien funciona Alt + Shit + A  -->
+  <!-- Siemrpe se pone el scrip antes de la etiqueta de cierre de el boddy -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+    <!-- El link que une mi docuemtno con java debe ir al ultimo pero antes de la etiqueta body  -->
+    <!-- Link a biblioteca de la aniimación -->
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="script.js"></script>
+
 </body>
 
 </html>
